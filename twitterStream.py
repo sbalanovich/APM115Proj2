@@ -32,6 +32,27 @@ if __name__ == '__main__':
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
     wyoming = [-111, 41, -104, 45]
+    ny = []
 
     #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
-    stream.filter(locations=wyoming, track=['feelthebern', 'bernie', 'sanders', 'berniesanders', 'bernie2016', 'clinton', 'hillaryclinton', 'imwithher', 'hillary2016', ])
+    stream.filter(track=['feelthebern',
+     'sanders',
+     'berniesanders',
+     'bernie2016',
+     'clinton',
+     'hillaryclinton',
+     'imwithher',
+     'hillary2016',
+     'tedcruz',
+     'cruzcrew',
+     'unitewithcruz',
+     'cruz2016',
+     'trump2016',
+     'donaldtrump',
+     '#trump',
+     'donaldtrump2016',
+     'kasichcan',
+     'johnkasich',
+     'kasich2016',
+     'kasich4us',
+    ])
