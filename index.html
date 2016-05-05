@@ -302,14 +302,18 @@ The following two sets of tables depict a comparison of the different models tha
 <p>This project leaves a great deal for future investigation, as the modeling and analyses conducted herein were very much first steps rather than a comprehensive approach: with more suitable infrastructure, we could better collect and filter Tweets to better gather data; with better timing and more time, we could have been modeling on larger training and testing sets.</p>
 
 <h2>
-<a id="what-we-learned" class="anchor" href="#what-we-learned" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What We Learned</h2>
-
-<p>I don’t think we need this section.</p>
-
-<h2>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
 
-<p>?</p>
+<p><ul>
+  <li>All of the code written for this project was done in Python using <a href="http://ipython.readthedocs.io/en/stable/index.html">IPython Notebooks</a>.</li>
+  <li>Figures were created using <a href="http://matplotlib.org/">matplotlib</a> and <a href="http://www.numpy.org/">NumPy</a>.</li>
+  <li><code>scikit-learn</code>'s <a href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html">RandomForestRegressor</a> was used to build our model.</li>
+  <li>Twitter data was compiled using the <a href="https://dev.twitter.com/rest/public/search">Twitter Search API</a>.</li>
+  <li>Campaign financial data was compiled from information provided by the <a href="http://www.fec.gov/">Federal Election Commission</a>.</li>
+  <li>Presidential primary outcomes were retrieved from <a href="http://www.politico.com/2016-election/results/map/president">POLITICO</a>.</li>
+  <li><a href="http://www.sentiment140.com/">Sentiment140</a> was used to tag individual Tweets' sentiments as positive, negative, or neutral.</li>
+  <li>Shi, Lei, et al. "Predicting US primary elections with Twitter." URL: <a href="http://snap.stanford.edu/social2012/papers/shi.pdf">http://snap.stanford.edu/social2012/papers/shi.pdf</a> (2012).</li>
+</ul></p>
 
 <h2>
 <a id="appendix" class="anchor" href="#appendix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Appendix</h2>
@@ -322,6 +326,7 @@ The following two sets of tables depict a comparison of the different models tha
   <li><a href="https://github.com/sbalanovich/APM115Proj2/blob/master/SergueiNotebooks/Random%20Forest%20Tests.ipynb">Random Forest Tests.ipynb</a> contains the code used to extract features from campaign financial data as well as code used to test and visualize our model.</li>
   <li>The <a href="https://github.com/sbalanovich/APM115Proj2/tree/master/pickles">pickles</a> folder contains several serialized data files created in the above Notebooks. Not all of the created pickles are found here, as they are larger than GitHub's 100 MB per-file limit.</li>
   <li>The <a href="https://github.com/sbalanovich/APM115Proj2/tree/master/CSVs">CSVs</a> folder contains a number of CSVs used and created throughout the above notebooks. They include the per-county Twitter geocode data as well as the financial data retrieved from the FEC.</li>
+  <li>The remaining code is largely scratchwork.</li>
 </ul></p>
 
 <h2>
